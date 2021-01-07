@@ -1,0 +1,1 @@
+$(".menu__buttom").on("click",(function(){$(".menu__listSeason").toggleClass("menu__listSeason--active")}));
