@@ -1,0 +1,50 @@
+.seasonHeader {
+    background-image: url(../img/season1Backgroun.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__bottom {
+        margin: 0 auto;
+        width: 1380px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #0e0e0e;
+    }
+    &__bottom-number {
+        text-align: center;
+        width: 178px;
+        padding: 21px 37px 0 26px;
+        font-weight: 700;
+        position: relative;
+    }
+    &__bottom-number--big {
+        font-size: 96px;
+        line-height: 112px;
+    }
+    &__bottom-number--small {
+        position: absolute;
+        top: 128px;
+        font-size: 36px;
+        line-height: 42px;
+    }
+    &__bottom-text {
+        padding: 44px 47px 64px 0;
+    }
+    &__bottom-description {
+        &:first-child {
+            padding-bottom: 30px;
+        }
+    }
+}
+.menu__listSeason-img {
+    position: absolute;
+    left: -77px;
+    top: 50px;
+}
+.menu__listSeason-link.menu__listSeason-link--active {
+    color: #85ccdc;
+    text-decoration: underline;
+}

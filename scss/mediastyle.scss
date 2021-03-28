@@ -1,0 +1,289 @@
+@media (min-width: 768px) {
+    .show {
+        display: none;
+    }
+}
+@media (max-width: 1380px) {
+    .seasonHeader__bottom {
+        width: 1024px;
+    }
+}
+
+@media (max-width: 1210px) {
+    .fourtlySection {
+        &__wraper {
+            grid-gap: 100px 30px;
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .slider__img {
+        max-width: 640px;
+    }
+    .fourtlySection {
+        &__wraper {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            grid-gap: 70px 15px;
+        }
+    }
+}
+
+@media (max-width: 1110px) {
+    .fourtlySection {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            grid-gap: 100px 75px;
+        }
+        &__wraper {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .slider {
+        flex-direction: column-reverse;
+        margin-bottom: 150px;
+
+        &__text {
+            min-height: 300px;
+            width: 100%;
+            padding-bottom: 30px;
+            padding-right: 20px;
+        }
+    }
+    .slider__img {
+        min-width: 100%;
+    }
+    .seasonHeader {
+        padding: 0 10px;
+        &__top {
+            min-height: 50vh;
+            text-align: center;
+        }
+        &__bottom {
+            width: 100%;
+        }
+        &__bottom-text {
+            padding: 35px 30px 50px 0;
+            font-size: 15px;
+        }
+        &__bottom-number {
+            width: 140px;
+        }
+    }
+    .title {
+        padding: 40px 0 55px;
+    }
+}
+@media (max-width: 830px) {
+    .slider {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .fourtlySection__wraper {
+        padding-bottom: 20px;
+    }
+    .container {
+        width: 100%;
+    }
+    .seasonHeader {
+        font-size: 16px;
+        padding: 0;
+        &__bottom {
+            flex-direction: column;
+            padding: 10px;
+        }
+        &__bottom-text {
+            padding: 10px 10px 10px 0;
+        }
+        &__bottom-number {
+            text-align: left;
+            padding: 0;
+        }
+        &__bottom-number--big {
+            font-size: 70px;
+        }
+        &__bottom-number--small {
+            top: 69px;
+            font-size: 27px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .firstSection__title {
+        padding-top: 30%;
+    }
+    .firstSection__logo {
+        width: 90%;
+    }
+    .fourtlySection__item::before {
+        font-size: 70px;
+    }
+    .seasonHeader__top {
+        padding: 0 10px;
+    }
+    .menu {
+        &__buttom {
+            display: block;
+            padding: 20px 0;
+            z-index: 20;
+            position: relative;
+            transition: all 0.7s;
+        }
+        &__buttom-arrow {
+            width: 50px;
+            height: 3px;
+            background-color: #fff;
+            z-index: 2;
+            display: block;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 50px;
+                left: 0px;
+                top: 33px;
+                background-color: #fff;
+                height: 3px;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 50px;
+                left: 0px;
+                top: 46px;
+                background-color: #fff;
+                height: 3px;
+            }
+        }
+        &__listSeason {
+            display: block;
+            background-color: #000;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -1000px;
+        }
+        &__listSeason--active {
+            top: 0;
+            transition: all 0.7s;
+        }
+
+        &__listSeason-item {
+            padding: 15px 0;
+        }
+    }
+    .about {
+        &__text {
+            display: block;
+        }
+        &__colum {
+            padding-bottom: 20px;
+        }
+    }
+    .menu__buttom--active {
+        .menu__buttom-arrow {
+            transform: rotate(45deg);
+            transition: all 0.7s;
+            position: relative;
+            top: 15px;
+            &::before {
+                transform: rotate(90deg);
+                top: 0px;
+                left: 1px;
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .slider__text-name {
+        font-size: 50px;
+        padding-top: 5px;
+    }
+    .thirtlySection__awesomePhrase {
+        &:first-child {
+            padding-right: 30%;
+        }
+    }
+    .thirtlySection__link {
+        padding-right: 29%;
+    }
+    .slick-arrow {
+        width: 25px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .slick-next {
+        right: 15px;
+    }
+    .slick-prev {
+        left: 15px;
+    }
+}
+@media (max-width: 495px) {
+    .slider__text-description {
+        font-size: 15px;
+    }
+    .firstSection__title {
+        padding-top: 48%;
+    }
+    .thirtlySection__awesomePhrase {
+        font-size: 55px;
+        line-height: 75px;
+    }
+    .thirtlySection__link {
+        padding-right: 15%;
+    }
+}
+@media (max-width: 400px) {
+    .thirtlySection__link {
+        width: 229px;
+        text-align: end;
+        &::before {
+            top: 2px;
+            left: -78px;
+        }
+    }
+}
+@media (max-width: 350px) {
+    .fourtlySection__item {
+        width: 100%;
+    }
+}
+
+//mobile logo
+@media (max-width: 1360px) {
+    .menu__listSeason-img {
+        left: 10px;
+    }
+}
+@media (max-width: 1140px) {
+    .menu__listSeason-img {
+        left: 50%;
+        top: 100px;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .menu__listSeason-img {
+        right: 10px;
+        left: auto;
+        top: 20px;
+        transform: translateX(0);
+    }
+}
